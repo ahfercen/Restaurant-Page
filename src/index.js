@@ -1,3 +1,3 @@
-import {website} from "./website.js";
+import {website} from "./website";
 
 website();
