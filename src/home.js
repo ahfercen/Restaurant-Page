@@ -43,9 +43,14 @@ function generateHeroItem(data){
     const image = document.createElement("img");
     image.src=data[0];
     imageDiv.appendChild(image);
-
+    const textDiv = document.createElement("div");
+    textDiv.className = "hero-text";
+    const text = document.createElement("p");
+    text.textContent = data[1];
+    textDiv.appendChild(text);
 
     element.appendChild(imageDiv);
+    element.appendChild(textDiv);
     return element;
 }
 
