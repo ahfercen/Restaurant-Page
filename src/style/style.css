@@ -1,0 +1,9 @@
+/* Global styling */
+body{
+    margin: 0;
+    background-color: #14213d;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}

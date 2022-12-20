@@ -1,4 +1,4 @@
-import './style.css';
+import logo from "./assets/logo2.webp"
 export function generateHeader(){
     const element = document.createElement("div");
     element.className = "header";
@@ -8,6 +8,8 @@ export function generateHeader(){
 function generateLogo(){
     const element = document.createElement("div");
     element.className = 'logo';
-    
+    const logoImage = document.createElement("img");
+    logoImage.src = logo;
+    element.appendChild(logoImage);
     return element;
 }
