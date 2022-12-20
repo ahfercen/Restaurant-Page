@@ -1,4 +1,4 @@
-import {generateTabOne} from "./tab_one";
+import {generateHome} from "./home";
 import {generateHeader} from "./header";
 
 export function website(){
@@ -7,18 +7,18 @@ export function website(){
     content.appendChild(tabLoader(1));
 }
 export function changeTab(e){
-    console.log(e.srcElement.dataset.value);
-    return e;
+    tabLoader(e.srcElement.dataset.value);
 }
-
 function tabLoader(index){
     switch (index) {
         case 0:
-            return generateTabOne();
+            return generateHome();
         case 1:
-            return generateTabOne();
+            return generateHome();
+        case 2:
+            return generateHome();
         default:
-            return generateTabOne();
+            return generateHome();
     }
 }
 

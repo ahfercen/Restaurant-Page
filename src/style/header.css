@@ -20,13 +20,11 @@
     flex: 1;
     display: flex;
     justify-content: space-evenly;  
-    gap: 100px;
-    width: 100%;
 }
 .tabBtn{
     border: none;
     background: none;
-    font-size: 200%;
+    font-size: 180%;
     padding: 0px 25px;
     font-weight: 600;
     transition: 
