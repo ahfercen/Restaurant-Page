@@ -1,4 +1,8 @@
-/* Tab specific styling */
+/* Home specific styling */
+:root{
+    --timing: 0.6s;
+    --shadow: 0.4s;
+}
 .home{
     background-color: var(--c1);
     display: flex;
@@ -11,6 +15,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 80%;
+    gap: 10px;
 }
 .hero-item{
     display: flex;
@@ -18,27 +23,30 @@
 .hero-content{
     display: flex;
     justify-content: center;
-}
-.hero-text{
-    position: absolute;
-    top: 100;
-    left: 100;
-
+    transition: box-shadow var(--shadow) ease-in-out;
 }
 .hero-img img{
     max-width: 100%;
     max-height: 100%;
 }
 .hero-text{
-    font-size: 250%;
+    position: absolute;
+    font-size: 200%;
     font-weight: bold;
     text-shadow: 0px 0px var(--c5);
     color: var(--c3);
     opacity: 0%;
-    transition: opacity 1.0s ease-in-out,
-                text-shadow 1.0s ease-in-out;
+    transition: opacity var(--timing) ease-in-out,
+                text-shadow var(--timing) ease-in-out,
+                padding-top var(--timing) ease-in-out,
+                font-size var(--timing) ease-in-out;
 }
 .hero-content:hover .hero-text{
     opacity: 100%;
     text-shadow: 4px 4px var(--c5);
+    padding-top: 100px;
+    font-size: 300%;
+}
+.hero-content:hover{
+    box-shadow: 0px 0px 15px var(--c2);
 }

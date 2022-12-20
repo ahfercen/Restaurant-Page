@@ -1,6 +1,6 @@
 import heroImage1 from "./assets/hero1.jpeg";
 import heroImage2 from "./assets/hero6.jpg";
-import heroImage3 from "./assets/hero3.jpg";
+import heroImage3 from "./assets/logo7.jpg";
 import heroImage4 from "./assets/hero4.jpg";
 
 export function generateHome(){
@@ -28,10 +28,10 @@ function generateGrid(element){
 }
 function makeHomeData(){
     const a = new Array(4);
-    a[0] = [ heroImage1 , "Pasta Pizza Mamma Mia"];
-    a[1] = [ heroImage2 , "Big Energy Food"];
-    a[2] = [ heroImage3 , "Healthy Food For You"];
-    a[3] = [ heroImage4 , "Yummy Yummy Yum Yum!"];
+    a[0] = [ heroImage1 , "🔥 Hot Sandwiches In Your Area 🔥"];
+    a[1] = [ heroImage2 , "🥵 Shrek Powder 🥵"];
+    a[2] = [ heroImage3 , "😍 Spoonfuls Of Fun 😍"];
+    a[3] = [ heroImage4 , "🤤 Chocolate Free Brownie 🤤"];
     return a;    
 }
 function generateHeroItem(data){
@@ -46,7 +46,7 @@ function generateHeroItem(data){
     const textDiv = document.createElement("div");
     textDiv.className = "hero-text";
     const text = document.createElement("p");
-    text.textContent = data[1];
+    text.textContent =  data[1];
     textDiv.appendChild(text);
 
     element.appendChild(imageDiv);
