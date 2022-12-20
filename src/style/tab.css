@@ -9,10 +9,22 @@
 .hero{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     border: 1px solid red;
+    width: 80%;
 }
-
+.hero-item{
+    display: flex;
+    border: 1px solid green;
+    
+}
+.hero-content{
+    display: flex;
+}
+.hero-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
 .hero-text{
     font-size: 180%;
     color: var(--c3);
