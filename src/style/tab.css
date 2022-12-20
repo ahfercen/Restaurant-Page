@@ -7,22 +7,12 @@
     padding-top: 20px;
 }
 .hero{
-    margin: 0px 30vw 0px 30vw;
-    display: flex;
-    flex: 1;
-}
-.hero-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     border: 1px solid red;
-    flex: 1;
 }
-.hero-img img{
 
-}
-.hero-info{
-    flex: 1;
-    border: 1px solid blue;
-
-}
 .hero-text{
     font-size: 180%;
     color: var(--c3);
