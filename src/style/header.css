@@ -1,11 +1,11 @@
+/* header and tab button styling */
 .header{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e5e5e5;
-    
+    background-color:var(--c2);
 }
 .logo{
     flex: 1;

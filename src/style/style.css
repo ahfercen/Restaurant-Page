@@ -1,7 +1,14 @@
 /* Global styling */
+:root{
+    --c1: #14213d;
+    --c2: #e5e5e5;
+    --c3: #fca311;
+    --c4: #ffffff;
+    --c5: #000000;
+}
 body{
     margin: 0;
-    background-color: #14213d;
+    background-color: var(--c1);
 }
 .content{
     display: flex;
