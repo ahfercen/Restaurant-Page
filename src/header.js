@@ -30,6 +30,8 @@ function generateTabButtons(){
         b.onclick = switchTab;
         b.innerHTML = btnText[i];
         b.className="tabBtn";
+        b.dataset.value = i;
+        console.log();
         element.appendChild(b);
     }
 

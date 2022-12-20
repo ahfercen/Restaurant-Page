@@ -5,11 +5,8 @@ export function website(){
     const content = document.getElementById("content");
     content.appendChild(generateHeader());
     content.appendChild(generateTabOne());
-    bindButtons();
+
 }
 
-function bindButtons(){
-    
-}
 
 
