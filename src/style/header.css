@@ -19,5 +19,19 @@
 .tabs{
     flex: 1;
     display: flex;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;  
+    gap: 100px;
+    width: 100%;
+}
+.tabBtn{
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 200%;
+    padding: 0px 25px;
+    border: 1px solid red;
+    transition: font-size 0.6s ease-in-out;
+}
+.tabBtn:hover{
+    font-size: 250%;
 }
