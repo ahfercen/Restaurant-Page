@@ -1,5 +1,5 @@
 import logo from "./assets/logo2.webp"
-import {switchTab} from "./switch";
+import {changeTab} from "./website";
 
 export function generateHeader(){
     const element = document.createElement("div");
@@ -27,11 +27,10 @@ function generateTabButtons(){
 
     for(let i = 0;i<btnText.length;i++){
         const b = document.createElement("button");
-        b.onclick = switchTab;
+        b.onclick = changeTab;
         b.innerHTML = btnText[i];
         b.className="tabBtn";
         b.dataset.value = i;
-        console.log();
         element.appendChild(b);
     }
 
