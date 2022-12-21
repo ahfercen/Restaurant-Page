@@ -1,6 +1,6 @@
 import heroImage1 from "./assets/hero1.jpeg";
-import heroImage2 from "./assets/hero6.jpg";
-import heroImage3 from "./assets/logo7.jpg";
+import heroImage2 from "./assets/hero2.jpg";
+import heroImage3 from "./assets/hero3.jpg";
 import heroImage4 from "./assets/hero4.jpg";
 
 export function generateHome(){

@@ -1,4 +1,4 @@
-import logo from "./assets/logo2.webp"
+import logo from "./assets/logo.webp"
 import {changeTab} from "./website";
 
 export function generateHeader(){

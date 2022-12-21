@@ -12,6 +12,7 @@ export function generateMenu(){
     const element = document.createElement("div");
     element.className = "menu";
     
+    
     generateGrid(element);
 
     return element;
