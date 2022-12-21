@@ -5,6 +5,7 @@
     --shadow: 0.4s;
 }
 .home{
+    position: absolute;
     background-color: var(--c1);
     display: flex;
     flex-direction: column;

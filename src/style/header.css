@@ -1,4 +1,7 @@
 /* header and tab button styling */
+:root{
+    --logo: 0.5s;
+}
 .header{
     flex: 1;
     display: flex;
@@ -7,14 +10,20 @@
     align-items: center;
     background-color:var(--c2);
 }
+.header:hover .logo img{
+    height: 30%;
+    width: 30%;
+}
 .logo{
     flex: 1;
     display: flex;
     justify-content: center;
 }
 .logo img{
-    height: 50%;
-    width: 50%;
+    height: 25%;
+    width: 25%;
+    transition: height var(--logo) ease-in-out,
+                width var(--logo) ease-in-out;
 }
 .tabs{
     flex: 1;
