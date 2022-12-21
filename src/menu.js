@@ -8,20 +8,20 @@ import menuImage7 from "./assets/menu7.jpeg";
 import menuImage8 from "./assets/menu8.jpeg";
 import menuImage9 from "./assets/menu9.jpeg";
 
-export function generateMenu(){
+export function generateMenu() {
     const element = document.createElement("div");
     element.className = "menu";
-    
+
     generateGrid(element);
 
     return element;
 }
 
-function generateGrid(menu){
+function generateGrid(menu) {
     const data = makeMenuData();
     const menuDiv = document.createElement("div");
     menuDiv.className = "menu-div";
-    for(let i=0;i<data.length;i++){
+    for (let i = 0; i < data.length; i++) {
         const gridItem = document.createElement("div");
         gridItem.className = "menu-item";
         gridItem.appendChild(generateMenuItem(data[i]));
@@ -30,7 +30,7 @@ function generateGrid(menu){
     }
     menu.appendChild(menuDiv);
 }
-function makeMenuData(){
+function makeMenuData() {
     const arr = new Array(9);
     arr[0] = [menuImage1, "🥚 Spring Egg Salad 🥚"];
     arr[1] = [menuImage2, "🍣 Dorito Rolls 🍣"];
@@ -41,9 +41,9 @@ function makeMenuData(){
     arr[6] = [menuImage7, "🍊 Orange Herring 🍊"];
     arr[7] = [menuImage8, "📸 Aesthetic Cake 📸"];
     arr[8] = [menuImage9, "🤔 Uncooked Pizza? 🤔"];
-    return(arr);
+    return (arr);
 }
-function generateMenuItem(data){
+function generateMenuItem(data) {
     const element = document.createElement("div");
     element.className = "item-content";
     const imgDiv = document.createElement("div");

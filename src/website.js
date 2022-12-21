@@ -9,7 +9,7 @@ export function website(){
     content.appendChild(generateHome());
     content.appendChild(generateMenu());
     content.appendChild(generateContact());
-    tabLoader(1);
+    tabLoader(2);
 }
 export function changeTab(e){
     tabLoader(e.srcElement.dataset.value);

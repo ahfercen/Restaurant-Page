@@ -1,9 +1,15 @@
-:root{
+:root {
     --tab: 0.4s;
 }
-.menu{
-    position: aboslute;
+
+.contact {
     visibility: hidden;
+    position: absolute;
     transition: opacity var(--tab) ease-in-out,
-    visibility 0.1s ease-in-out var(--tab);
+        visibility 0.1s ease-in-out var(--tab);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-image: url("../assets/contact2.jpg");
 }
+
