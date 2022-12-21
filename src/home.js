@@ -7,8 +7,6 @@ export function generateHome(){
     const element = document.createElement("div");
     element.className = "home";    
     element.appendChild(generateHero());
-
-
     return element;
 }
 function generateHero(){
@@ -35,7 +33,6 @@ function makeHomeData(){
     return a;    
 }
 function generateHeroItem(data){
-    console.log(data);
     const element = document.createElement("div");
     element.className = "hero-content";
     const imageDiv = document.createElement("div");
