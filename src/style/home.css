@@ -1,5 +1,6 @@
 /* Home specific styling */
 :root{
+    --tab: 0.4s;
     --timing: 0.6s;
     --shadow: 0.4s;
 }
@@ -9,6 +10,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    transition: opacity var(--tab) ease-in-out,
+                visibility 0.1s ease-in-out var(--tab);
 }
 .hero{
     display: grid;

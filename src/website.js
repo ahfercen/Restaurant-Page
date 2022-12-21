@@ -22,8 +22,10 @@ function tabLoader(index){
 
    for (let i=0;i<pages.length;i++){
     pages[i][0].style.visibility = "hidden";
+    pages[i][0].style.opacity = "0%";
    }
-   pages[index][0].style.visibility = "visible";
+   pages[index][0].style.visibility = "visible"
+   pages[index][0].style.opacity = "100%";
 }
 
 
