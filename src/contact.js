@@ -1,6 +1,9 @@
+import contactImage from "./assets/contact2.jpg";
+
 export function generateContact() {
     const element = document.createElement("div");
     element.className = "contact";
+
     generateFlex(element);
     return element;
 }
@@ -17,11 +20,11 @@ function generateInfo(content) {
 
     const titleDiv = document.createElement("div");
     titleDiv.className = "contact-title";
-    titleDiv.textContent = "Gorbino's Nutrious Human Foods";
+    titleDiv.textContent = "Gorbino's Nutritious Human Foods Inc.";
 
     const textDiv = document.createElement("div");
     textDiv.className = "contact-text";
-    textDiv.textContent = "Started in 1768 as a family business, Our chain of restaurants has been serving the human community for centuries."
+    textDiv.textContent = "Started in 1768 as a family business, our chain of restaurants has been serving the human community for centuries."
 
     const staffDiv = document.createElement("div");
     staffDiv.className = "contact-staff";
