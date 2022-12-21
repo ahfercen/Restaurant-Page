@@ -3,7 +3,6 @@ import {generateMenu} from "./menu";
 import {generateContact} from "./contact"
 import {generateHeader} from "./header";
 
-
 export function website(){
     const content = document.getElementById("content");
     content.appendChild(generateHeader());
@@ -12,24 +11,19 @@ export function website(){
     content.appendChild(generateContact());
 }
 export function changeTab(e){
-    const content = document.getElementById("content");
-    //console.log(content.getElementsByClassName("home"));
-    //content.innerHTML = '';
-    //content.appendChild(generateHeader());
-    //content.appendChild(tabLoader(e.srcElement.dataset.value));
+    tabLoader(e.srcElement.dataset.value);
 }
 function tabLoader(index){
-    console.log(index);
-    switch (index) {
-        case 0:
-            break;
-        case 1:
-            break;
-        case 2:
-            break;
-        default:
-            break;
-    }
+    const content = document.getElementById("content");
+    const pages = new Array(3);
+    pages[0] = content.getElementsByClassName("home");
+    pages[1] = content.getElementsByClassName("menu");
+    pages[2] = content.getElementsByClassName("contact");
+
+   for (let i=0;i<pages.length;i++){
+    pages[i][0].style.visibility = "hidden";
+   }
+   pages[index][0].style.visibility = "visible";
 }
 
 
