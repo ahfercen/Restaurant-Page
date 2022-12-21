@@ -2,7 +2,7 @@
     --tab: 0.4s;
 }
 .contact {
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
     transition: opacity var(--tab) ease-in-out,
     visibility 0.1s ease-in-out var(--tab);

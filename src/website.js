@@ -9,7 +9,7 @@ export function website(){
     content.appendChild(generateHome());
     content.appendChild(generateMenu());
     content.appendChild(generateContact());
-    tabLoader(2);
+    tabLoader(0);
 }
 export function changeTab(e){
     tabLoader(e.srcElement.dataset.value);
@@ -22,10 +22,10 @@ function tabLoader(index){
     pages[2] = content.getElementsByClassName("contact");
 
    for (let i=0;i<pages.length;i++){
-    pages[i][0].style.visibility = "hidden";
+    pages[i][0].classList.add("hidden");
     pages[i][0].style.opacity = "0%";
    }
-   pages[index][0].style.visibility = "visible"
+   pages[index][0].classList.remove("hidden");
    pages[index][0].style.opacity = "100%";
 }
 
